@@ -26,6 +26,12 @@
 
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/a9626412-552b-4337-b30f-017953ce4dd6)
 
+# (Alternative) Globally hosted portfolio
+
+## [www.nensiravaliya.me](https://www.nensiravaliya.me/)
+
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/e988e3d0-1551-4b84-86b7-47642daf9600)
+
 
 
 
