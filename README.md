@@ -1,6 +1,6 @@
 # Nensi Ravaliya's Portfolio
 
-# (https://nensiravaliya.z10.web.core.windows.net/)[https://nensiravaliya.z10.web.core.windows.net/]
+# [https://nensiravaliya.z10.web.core.windows.net/](https://nensiravaliya.z10.web.core.windows.net/)
 
 # [www.nensiravaliya.me](https://www.nensiravaliya.me/)
 
