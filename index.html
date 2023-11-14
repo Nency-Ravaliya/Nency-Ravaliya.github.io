@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nensi Ravaliya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://threejs.org/build/three.js"></script>
+
+  <link rel="icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+
+</head>
+<style>
+
+    /* Style the button */
+        .custom-button {
+            display: inline-block;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff; /* Set your desired text color */
+            background-color: #57575a; /* Set your desired button color */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        /* Hover effect */
+        .custom-button:hover {
+            background-color: #1f1f5332; /* Set your desired hover color */
+        }
+
+
+        /* new code */
+        #night-sky {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #chatbotIcon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000; /* Adjust the z-index as needed to ensure it appears above other elements */
+        transition: transform 0.3s ease; /* Add smooth transition to the icon */
+    }
+
+        #chatbotContainer {
+        display: none;
+        position: fixed;
+        bottom: 20px; /* Add margin to the bottom */
+        right: 20px; /* Add margin to the right */
+        width: 300px; /* Adjust the width as needed */
+        height: 400px; /* Adjust the height as needed */
+        border: 1px solid #cb1919;
+        background-color: rgb(78, 133, 210);
+        z-index: 1000;
+        transition: transform 0.3s ease; /* Add smooth transition to the chatbot box */
+        transform: translate(100%, 100%); /* Initially position the box outside the viewport */
+    }
+
+        #closeChatbot {
+        cursor: pointer;
+        text-align: right;
+        padding: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="overlay"></div>
+    <div id="night-sky"></div>
+    <header>
+        <a href="#" class="logo"><span></span>Nensi</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="https://www.linkedin.com/in/nencyravaliya28/" class="btn">Let's connect <i class='bx bx-message-dots' ></i></a>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h3>Jay Shree Krishna! </h3>
+            <h1 style="color: #6f6b6b;">Hi I'm Nensi</h1>
+            <div class="text-animate">
+                <h2>Microsoft Student Ambassador </h2>
+            </div>
+            
+            <p>"Hello! 👋 I'm Nency, a Computer Engineering student at GEC Bhavnagar. A passionate tech enthusiast with hands-on experience in C, Java, and Python, I've showcased my dedication through projects like 'Cleanliness Automation Using ML' at <b>Hackathon 2022</b>. Proficient in web development, cloud computing (Azure, AWS), and IoT, I bring a well-rounded perspective. As a <b>Microsoft Learn Student Ambassador</b>, I thrive in a vibrant tech community. Let's connect and explore the limitless possibilities in technology. 👨‍💻🌐"</p>
+
+            <div class="btn-box">
+                <a href="mailto:ravaliyanensi@gmail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="img/NensiRavaliya.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://github.com/Nency-Ravaliya" target="_blank"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://twitter.com/NencyRavaliya" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://www.linkedin.com/in/nencyravaliya28/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <!-- <img src="img/circle (4).png" style="margin-top:30px;" alt=""> -->
+            <img src="img/wow1-removebg-preview (1).png" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p>I'm Microsoft Student Ambassador(MLSA) And I'm Developer.</p>
+                </div>
+                <span><i></i></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/enhanceflower.png" alt="" class="aboutHero">
+            <div class="showcase-ring">
+                <img src="shapes/ring.png" class="ring">
+                <img src="shapes/circle.png" class="circle">
+            </div>
+        </div>
+
+
+
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3 style="color: #6f6b6b;">1 Year's Experience on AWS Cloud and Azure Cloud</h3>
+            <p>Currently, I am challenging myself by doing different web and app dev projects using different AI tools and components. I am Cloud and Tech enthusiast. </p>
+            <div class="about-btn">
+                <button class="active">Main Skills</button>
+                <button>Experience</button>
+                <button>Education</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                    <p style="color: #e71166;">AWS websites deployment(static & dynamic)</p>
+                    <span style="color:#4d6ec9;">Delight the user and make it work.</span>
+                </div>
+                <div class="text-box">
+                    <p style="color: #e71166;">Web & App dev projects using AI aspect.</p>
+                    <span style="color:#4d6ec9;">Website, Chatbot, Web Experience , ...</span>
+                </div>
+                <div class="text-box">
+                    <p style="color: #e71166;">Interaction Desing - Animation</p>
+                    <span style="color:#4d6ec9;">I Like to move it move it</span>
+                </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                    <p>UpSkill campus & Uniconverge technologies</p>
+                    <!-- <span>Cloud Computing Intern</span> -->
+                    <span><a href="https://github.com/Nency-Ravaliya/upskillcampus.git" target="_blank" class="custom-button">Cloud Computing Intern</a></span>
+
+                </div>
+                <div class="text-box">
+                    <p>Infolabz technologies</p>
+                    <a href="https://github.com/Nency-Ravaliya/Hand-Gestures-Indian-Hand-Gestures-.git" target="_blank" class="custom-button">Data Analytics & Machine Learning</a>
+                </div>
+                <div class="text-box">
+                    <p>The Spark Foundation</p>
+                    <a href="https://github.com/Nency-Ravaliya/Spark-Foundation.git" target="_blank" class="custom-button">Web Development</a>
+                </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                    <p>B.E.(Bachelor of Engineering)</p>
+                    <span>Coputer Engineering-2024CE</span><br>
+                    <span>Gujarat technological University, Ahmedabad</span>
+                </div>
+                <!-- <div class="text-box">
+                    <p>Internships and Work Experience</p>
+                    <span>Website , Web Experience , ...</span>
+                </div>
+                <div class="text-box">
+                    <p>Bachelor's Degree in Computer Science</p>
+                    <span>I Like to move it move it</span>
+                </div> -->
+                </div>
+            </div>
+            <div class="cvContent">
+                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+                
+            </div>
+            <div class="myring">
+                <img src="shapes/ring.png" class="ring" style="float: right; margin-bottom:20px; margin-right:50px;">
+                <!-- <img src="shapes/circle.png" class="circle" style="margin-top: 250px; float: left;"> -->
+            </div>
+        </div>
+
+       
+    </section>
+
+    
+    <section class="services" id="services">
+        <div class="main-text">
+           
+                <img src="shapes/circle.png" class="circle">
+            
+            <h2 class="heading">My Services</h2>
+            <span>what i will do for you</span>
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer' ></i>
+                    <span></span>
+                </div>
+                <h3>Web Development</h3>
+                <p style="color: #6f6b6b;">Transforming ideas into captivating websites. Our web development services promise not just a digital presence but an engaging online journey. From responsive design to scalable architecture, we bring your vision to life.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt' ></i>
+                    <span></span>
+                </div>
+                <h3>App Development</h3>
+                <p style="color: #6f6b6b;">Crafting seamless and innovative mobile applications tailored to your needs. Elevate your business with user-friendly interfaces, robust functionality, and a commitment to delivering a superior app experience.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop' ></i>
+                    <span></span>
+                </div>
+                <h3>UI / UX Design</h3>
+                <p style="color: #6f6b6b;">Immerse your audience in visually stunning and intuitively designed interfaces. Our UX/UI design services prioritize user experience, ensuring every click resonates with purpose. Elevate your brand with aesthetics and functionality seamlessly intertwined.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bxs-party' ></i>
+                    <span></span>
+                </div>
+                <h3>Website Deployement</h3>
+                <p style="color: #6f6b6b;">Unlock the power of cloud computing with expert AWS and Azure deployment services. Experience unparalleled performance, scalability, and security. Your website deserves a reliable and efficient hosting solution.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+        </div>
+
+        <div class="proposal">
+            <div class="text-box">
+                <span>Get It Touch</span>
+                <h3>Have a Project On Your Mind</h3>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <img src="img/support.png" class="first">
+        </div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/circle.png" class="circle2">
+            <img src="shapes/circle.png" class="circle3">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">My Projects</h2>
+            <span>Let's Explore</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All Work</button>
+            <button class="button" data-filter=".web">Web & App Development</button>
+            <button class="button" data-filter=".uiux">Data Analytics & Machine Learning</button>
+            <button class="button" data-filter=".branding">Website Deployement on Cloud</button>
+        </div>
+
+        <div class="portfolio-gallery">
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>Machine Learning</h3>
+                    <p style="color: #6f6b6b;">Hand Gestures Recognition(Indian-Hand-Gestures)</p>
+                    <a href="https://github.com/Nency-Ravaliya/Hand-Gestures-Indian-Hand-Gestures-.git" target="_blank" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/hand.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Design</h3>
+                    <p style="color: #6f6b6b;">Basic Banking System</p>
+                    <a href="https://www.linkedin.com/posts/nencyravaliya28_task1-gripmarch23-thesparksfoundation-activity-7043977861875011584-3xsY?utm_source=share&utm_medium=member_desktop" target="_blank" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/web.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web" class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Web Development & Deployement on AWS</h3>
+                    <p style="color: #6f6b6b;">HR Management System</p>
+                    <a href="https://www.linkedin.com/posts/nencyravaliya28_engineersday-cloudcomputing-upskill-activity-7108335964376227840-mRQ6?utm_source=share&utm_medium=member_desktop" target="_blank" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/type.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Web Development & Deployement on Azure</h3>
+                    <p style="color: #6f6b6b;">Portfolio website</p>
+                    <a href="https://purple-meadow-03df64200.4.azurestaticapps.net" target="_blank" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/web1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>IOT(Internet Of Things) with Machine Learning</h3>
+                    <p style="color: #6f6b6b;">Smart door lock System with LIVE Streaming.</p>
+                    <a href="#" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/iot.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>Machine Learning with IOT</h3>
+                    <p style="color: #6f6b6b;">Cleanlinees Automation using Machine Learning</p>
+                    <a href="#" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/machine.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Website Deployement on AWS Cloud</h3>
+                    <p style="color: #6f6b6b;">HR Management System</p>
+                    <a href="https://www.linkedin.com/posts/nencyravaliya28_engineersday-cloudcomputing-upskill-activity-7108335964376227840-mRQ6?utm_source=share&utm_medium=member_desktop" target="_blank" class="readMore">Check here</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/clear.jpg" alt="">
+                </div>
+            </div>
+            <img src="shapes/circle.png" class="circle" style="margin-left: 450px; margin-top: 150px;">
+
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="main-text">
+                        
+
+            <h2 class="heading">Blog</h2>
+            
+            <span>Latest News & Post</span>
+        </div>
+
+        <div class="blog-box swiper mySwiper">
+            <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/dabricks.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Azure Databricks</h2>
+                        <span class="date">Monday, Jan 15, 2022</span>
+                        <p class="excerpt" style="color: #6f6b6b;">
+                            "Azure Databricks is a fast, easy, and collaborative Apache Spark-based analytics platform in the Microsoft Azure cloud, offering data engineering and machine learning capabilities seamlessly integrated with other Azure services.""
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/factory.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Azure Data Factory</h2>
+                        <span class="date">Tuesday, Mar 07, 2022</span>
+                        <p class="excerpt" style="color: #6f6b6b;">
+                            "Azure Data Factory is a cloud-based data integration service by Microsoft Azure, empowering users to create, schedule, and manage data pipelines that move and transform data from various sources to destinations. "                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/gold.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Microsoft Learn Student Ambassador</h2>
+                        <span class="date" >Wednesday, Aug 10, 2023</span>
+                        <p class="excerpt" style="color: #6f6b6b;">
+                            "Microsoft Learn Student Ambassador is a global community of tech enthusiasts to empower and inspire the next generation of learners! Student Ambassadors are a global group of campus leaders who are eager to help fellow students."</p>
+                        <a href="https://mvp.microsoft.com/studentambassadors" target="_blank" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/womentech.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Women in Tech</h2>
+                        <span class="date">Monday, Oct 14, 2023</span>
+                        <p class="excerpt" style="color: #6f6b6b;">
+                            "Empowering innovation and breaking barriers, women in tech are driving the future of technology with their brilliance and resilience. From coding to leading groundbreaking projects, shaping a more inclusive and dynamic tech landscape."                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/linkedin.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Improve Linkedin community</h2>
+                        <span class="date">Sunday, Jan 25, 2023</span>
+                        <p class="excerpt" style="color: #6f6b6b;">
+                            "Fostering collaboration and knowledge-sharing, the LinkedIn community has become a dynamic hub for professionals to connect, learn. Joining this vibrant network opens doors to endless opportunities, empowering individuals and build meaningful connections."</p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/emergetech.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Top 3 Emerging technologies</h2>
+                        <span class="date">Sunday, Feb 10, 2023</span>
+                        <p class="excerpt" style="color: #6f6b6b;">
+                            "Embark on the frontier of innovation with the top 3 emerging technologies reshaping our world. From the quantum computing to the transformative impact of AI and The Cloud computing, these breakthroughs are heralding a new era of possibilities."                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/second-circle.png" class="second-circle">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/ring.png" class="half-ring">
+        </div>
+
+    </section>
+
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contact Me</h2>
+                    <span>get in touch with me</span>
+                </div>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="#" id="" cols="30" rows="10">
+                    </textarea>
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="skills">
+                <div class="container">
+                    <div class="skillBox">
+                        <div class="main-text">
+                            <h2 class="heading">My Skills</h2>
+                            <span>Let Me Help you</span>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="70">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Machine Learning
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="65">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Cloud & Devops
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="70">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Web development
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="50">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    App Development
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="60">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Problem solving
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="80">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Database Management(MySQL)
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media" id="id1">
+            <div class="bg-icon" style="align-items:center;">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <span></span>
+            </div>
+
+            <div class="bg-icon">
+                <a href="https://github.com/Nency-Ravaliya" target="_blank"><i class='bx bxl-github'></i></a>
+                <span></span>
+            </div>
+
+            <div class="bg-icon">
+                <a href="https://twitter.com/NencyRavaliya" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <span></span>
+            </div>
+
+            <div class="bg-icon">
+                <a href="https://www.linkedin.com/in/nencyravaliya28/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <span></span>
+            </div>
+        </div>
+    </br>
+        <p style="color: #6f6b6b;">,<br>Copyright © 2023 by <span style="color: #6f6b6b;">Nensi Ravaliya</span><span style="color: #6f6b6b;"> || All Right Reserved.</span> </p>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+    <!-- new code -->
+    
+        <!-- Include your scripts at the end of the body -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+        <script src="script.js"></script>
+        <script src="animation.js"></script>
+
+        <!-- <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "OKIednVjE9CiacVFqMmVn",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="OKIednVjE9CiacVFqMmVn"
+            domain="www.chatbase.co"
+            defer>
+            </script> -->
+
+            <div id="chatbotIcon">
+                <!-- Add your chat icon or image here -->
+                <img src="img/chatbot1.png" alt="Chat Icon" width="50" height="50">
+              </div>
+              
+              <div id="chatbotContainer">
+                <div id="closeChatbot" onclick="closeChatbot()">Close</div>
+                <!-- Replace the following iframe with your chatbot iframe code -->
+                <iframe src="https://www.chatbase.co/chatbot-iframe/OKIednVjE9CiacVFqMmVn" width="100%" height="100%" frameborder="0"></iframe>
+              </div>
+
+             <script>
+            // Function to open the chatbot
+            function openChatbot() {
+                document.getElementById("chatbotContainer").style.display = "block";
+                document.getElementById("chatbotContainer").style.transform = "translate(0, 0)"; /* Move the box to its position */
+            }
+
+            // Function to close the chatbot
+            function closeChatbot() {
+                document.getElementById("chatbotContainer").style.transform = "translate(100%, 100%)"; /* Move the box outside the viewport */
+                setTimeout(function () {
+                document.getElementById("chatbotContainer").style.display = "none";
+                }, 300); /* Wait for the transition to complete before hiding the box */
+            }
+
+            // Add a click event listener to the chatbot icon
+            document.getElementById("chatbotIcon").addEventListener("click", openChatbot);
+            </script>
+</body>
+</html>
