@@ -6,6 +6,12 @@
 
 
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/16b04589-3f76-456b-8d46-965b6e90d6b2)
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/b384c415-6d56-44e1-956d-5674b411b8e0)
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/f261923a-7bf8-4f35-9a89-04232ce8b5ec)
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/f9f72e0e-d2e1-4eac-84dd-4c5d0355c6d1)
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/adb2e787-2c1d-4bfa-9fe4-f610602caa12)
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/9632588a-2939-484e-a9fc-0bf223d1e3d6)
+
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/c19315a8-699c-49e8-bb50-d369eee0c9af)
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/c9d7aaa4-00c2-429f-b6e8-19705b69363c)
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/c072241b-0fe2-43e1-a1f7-21eee8dc9b34)
