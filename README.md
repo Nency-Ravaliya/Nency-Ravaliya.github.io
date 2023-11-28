@@ -22,7 +22,7 @@
 
 ## Azure static web app service
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/cb9e75a2-d02d-457c-9e19-9100cbbb5697)
-![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/6f0be8e2-cfd8-48d7-81c1-522c0688b70f)
+![image](https://github.com/Nency-Ravaliya/Nency-Ravaliya.github.io/assets/117109265/60a52515-bc6c-426b-a9b1-25aed935830f)
 ![image](https://github.com/Nency-Ravaliya/Portfolio/assets/117109265/9867664f-4d1c-4a41-92fc-5cb013b5473d)
 
 # (Alternative) Hosting using Github pages
