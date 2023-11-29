@@ -156,7 +156,7 @@
 
         <div class="about-img">
         <video id="videoPlayer" width="640" height="360" controls>
-            <source src="Nensi Ravaliya1.mp4" type="video/mp4">
+            <source src="Nensi Ravaliya.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <br>
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <div class="cvContent">
-                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+                <a href="img/NensiRavaliya.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
                 
             </div>
             <div class="myring">
@@ -743,7 +743,7 @@
         <script src="script.js"></script>
         <script src="animation.js"></script>
 
-        <script>
+        <!-- <script>
             window.embeddedChatbotConfig = {
             chatbotId: "OKIednVjE9CiacVFqMmVn",
             domain: "www.chatbase.co"
@@ -754,6 +754,36 @@
             chatbotId="OKIednVjE9CiacVFqMmVn"
             domain="www.chatbase.co"
             defer>
+            </script> -->
+
+            <div id="chatbotIcon">
+                <!-- Add your chat icon or image here -->
+                <img src="img/chatbot1.png" alt="Chat Icon" width="50" height="50">
+              </div>
+              
+              <div id="chatbotContainer">
+                <div id="closeChatbot" onclick="closeChatbot()">Close</div>
+                <!-- Replace the following iframe with your chatbot iframe code -->
+                <iframe src="https://www.chatbase.co/chatbot-iframe/OKIednVjE9CiacVFqMmVn" width="100%" height="100%" frameborder="0"></iframe>
+              </div>
+
+             <script>
+            // Function to open the chatbot
+            function openChatbot() {
+                document.getElementById("chatbotContainer").style.display = "block";
+                document.getElementById("chatbotContainer").style.transform = "translate(0, 0)"; /* Move the box to its position */
+            }
+
+            // Function to close the chatbot
+            function closeChatbot() {
+                document.getElementById("chatbotContainer").style.transform = "translate(100%, 100%)"; /* Move the box outside the viewport */
+                setTimeout(function () {
+                document.getElementById("chatbotContainer").style.display = "none";
+                }, 300); /* Wait for the transition to complete before hiding the box */
+            }
+
+            // Add a click event listener to the chatbot icon
+            document.getElementById("chatbotIcon").addEventListener("click", openChatbot);
             </script>
 
 </body>
